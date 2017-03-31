@@ -1,0 +1,163 @@
+<!DOCTYPE html/>
+<html>
+    <head>
+        <title>Osama AL-shafie</title>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aref+Ruqaa">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lalezar">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette">
+        <link rel="stylesheet" href="css/style.css"/>
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.min.js"></script>
+            <script src="js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- start the NavBar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href=""><span>AL</span>Shafie</a>
+              </div>
+          
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li class="active" id="nav_intro"><a href="#intro">Welcome <span class="sr-only">(current)</span></a></li>
+                  <li id="nav_about"><a href="#about">About</a></li>
+                  <li id="nav_portfolio"><a href="#portfolio">Portfolio</a></li>
+                  <li id="nav_contact"><a href="#contact">Contact</a></li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <!-- end the NavBar -->
+        <!-- start the intro section -->
+        <section class="intro_section text-center" id="intro">
+            <div class="intro ">
+                <div class="container">
+                    <h1>بسم الله الرحمن الرحيم</h1>
+                    <div class="welcome">Welcome</div>
+                </div>
+            </div>
+        </section>
+        <!-- end the intro section -->
+        <!-- start the about section -->
+        <section class="about_section text-center" id="about">
+            <div class="container">
+                <h2>About ME</h2>
+                <hr/>
+                <img src="img/me.jpg" class="img-circle myphoto"/>
+                <h3>Osama AL Shafie</h3>
+                <p>software engineer &amp; full stack web developer graduated from FCI cairo university.</p>
+            </div>
+        </section>
+        <!-- end the about section -->
+        <!-- start the portfolio section -->
+        <section class="portfolio_section text-center" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <h2>Portfolio</h2>
+                    <div class="col-md-6 project">
+                        <img src="img/projects/01.png" class="img-responsive" alt="project_1"/>
+                    </div>
+                    <div class="col-md-6 project">
+                        <img src="img/projects/02.png" class="img-responsive" alt="project_2"/>
+                    </div>
+                    <div class="col-md-6 project">
+                        <img src="img/projects/03.png" class="img-responsive" alt="project_3"/>
+                    </div>
+                    <div class="col-md-6 project">
+                        <img src="img/projects/04.png" class="img-responsive" alt="project_4"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end the portfolio section -->
+        <!-- start the contact section -->
+        <section class="contact_section text-center" id="contact">
+            <div class="fields">
+                <div class="container">
+                    <div class="row">
+                        <i class="fa fa-headphones fa-5x"></i>
+                        <h1>Please! Tell Me How can i help you.</h1>
+                        <p class="lead">contact me in any time that you want</p>
+                        <form name="contact_form" role="form" action="control/validate_contact.php" method="post">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input class="form-control input-lg" name="username" type="text" placeholder="enter your name" required />
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control input-lg" name="email" type="text" placeholder="enter your email" required />
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control input-lg" name="phone" type="text" placeholder="enter your phone" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control input-lg" name="message" placeholder="your message"></textarea>
+                                </div>
+                                <button class="btn btn-info btn-lg btn-block" type="button" onclick="return validateContact()">contact us</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end the contact section -->
+        <!-- start the footer section -->
+        <section class="footer_section text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 location">
+                        <h2>Location</h2>
+                        <p>6th Abu Bakr AL-Sadiq St.,
+                        <br>Faysal, Giza, EGYPT</p>
+                    </div>
+                    <div class="col-md-4 socialmedia">
+                        <h2>Around The Web</h2>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/osama.alshafie.5" target="_blank"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://plus.google.com/u/0/101084326904614325502" target="_blank"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UC7SdNTaSjkipTit1Zja9itQ" target="_blank"><i class="fa fa-fw fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/osama-alshafie-686865121/" target="_blank"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 freelancing">
+                        <h2>About Freelancing</h2>
+                        <p>you can conact to me on</p>
+                        <a href="https://mostaql.com/u/osama_alshafie" target="_blank"><button class="btn btn-success btn-lg mbtn" type="button">مستقل</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                Copyright &copy; 2017 <span>ALShafie</span> is reserved.
+            </div>
+        </section>
+        <!-- end the footer section -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
